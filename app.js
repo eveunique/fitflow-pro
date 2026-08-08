@@ -12,7 +12,7 @@ const routines = {
   "Core & Mobility":
     "Try gentle mobility, bird-dog movements, easy stretching, and comfortable core exercises. Rest whenever needed.",
   "Cardio":
-    "Choose an easy-to-moderate activity such as marching in place or a comfortable walk. Rest whenever needed."
+    "Choose an easy-to-moderate activity such as marching in place or a comfortable walk. Rest whenever needed.",
  "Lower Body": "Try gentle lower-body movements such as chair squats, step-backs, and calf raises. Rest whenever needed.",
 "Stretch & Flexibility": "Try gentle stretches for your arms, legs, shoulders, and back. Move slowly and comfortably.",
 "Upper Body": "Try gentle upper-body movements such as wall push-ups, arm circles, and shoulder movements. Rest whenever needed.",};
