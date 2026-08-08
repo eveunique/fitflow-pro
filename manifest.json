@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "FitFlow Pro",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "FitFlow",
+  "start_url": "/",
+  "theme_color": "#111827",
+  "description": "FitFlow Pro is your everyday workout companion for comfortable workouts and healthy habits."
+}
