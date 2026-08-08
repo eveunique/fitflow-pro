@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>FitFlow Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="eyebrow">YOUR WORKOUT COMPANION</p>
+        <h1>FitFlow Pro</h1>
+      </div>
+      <div class="logo">F</div>
+    </header>
+
+    <section class="hero">
+      <p>Move, build healthy habits, and track your workouts.</p>
+      <button id="startBtn">Start today's workout</button>
+    </section>
+
+    <section>
+      <h2>Choose a workout</h2>
+      <div class="cards">
+        <button class="card" data-workout="Full Body">
+          <span>💪</span><strong>Full Body</strong><small>20 minutes</small>
+        </button>
+        <button class="card" data-workout="Core & Mobility">
+          <span>🧘</span><strong>Core & Mobility</strong><small>15 minutes</small>
+        </button>
+        <button class="card" data-workout="Cardio">
+          <span>🏃</span><strong>Cardio</strong><small>15 minutes</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="progress">
+      <h2>This week</h2>
+      <div class="progress-row"><span>Workouts completed</span><b id="count">0</b></div>
+      <div class="bar"><i id="bar"></i></div>
+      <p class="note">Keep sessions comfortable and stop if something hurts.</p>
+    </section>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-box">
+        <button id="close" class="close">×</button>
+        <p class="eyebrow">TODAY'S SESSION</p>
+        <h2 id="modalTitle">Full Body</h2>
+        <p id="exercise">Warm up gently for 3 minutes.</p>
+        <button id="doneBtn">Mark workout complete</button>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
