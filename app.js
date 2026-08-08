@@ -50,3 +50,40 @@ document.getElementById("doneBtn").addEventListener("click", () => {
 });
 
 render();
+let timerSeconds = 30;
+let timerInterval = null;
+
+const timerDisplay = document.getElementById("timerDisplay");
+const timerBtn = document.getElementById("timerBtn");
+
+function updateTimer() {
+  const minutes = Math.floor(timerSeconds / 60);
+  const seconds = timerSeconds % 60;
+
+  timerDisplay.textContent =
+    String(minutes).padStart(2, "0") + ":" +
+    String(seconds).padStart(2, "0");
+}
+
+timerBtn.addEventListener("click", () => {
+  if (timerInterval) return;
+
+  timerBtn.textContent = "Running...";
+
+  timerInterval = setInterval(() => {
+    if (timerSeconds <= 0) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+      timerBtn.textContent = "Start Timer";
+      timerSeconds = 30;
+      updateTimer();
+      alert("Timer finished!");
+      return;
+    }
+
+    timerSeconds--;
+    updateTimer();
+  }, 1000);
+});
+
+updateTimer();
