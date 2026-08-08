@@ -23,7 +23,7 @@ function render() {
 function openWorkout(name) {
   title.textContent = name;
   exercise.textContent = routines[name] || "Move at a comfortable pace and rest whenever needed.";
-  modal.hidden = false;
+  modal.classList.remove("hidden");
 }
 
 document.querySelectorAll(".card").forEach(card => {
@@ -37,13 +37,13 @@ document.getElementById("startBtn").addEventListener("click", () => {
 });
 
 document.getElementById("close").addEventListener("click", () => {
-  modal.hidden = true;
+  modal.classList.add("hidden");
 });
 
 document.getElementById("doneBtn").addEventListener("click", () => {
   count++;
   localStorage.setItem("fitflowCount", count);
-  modal.hidden = true;
+  modal.classList.add("hidden");
   render();
 });
 
