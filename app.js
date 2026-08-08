@@ -3,7 +3,7 @@ let count = Number(localStorage.getItem("fitflowCount")) || 0;
 const countEl = document.getElementById("count");
 const bar = document.getElementById("bar");
 const modal = document.getElementById("modal");
-const title = document.getElementById("title");
+const title = document.getElementById("modalTitle");
 const exercise = document.getElementById("exercise");
 
 const routines = {
